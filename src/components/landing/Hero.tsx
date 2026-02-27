@@ -26,7 +26,7 @@ const Hero = () => {
         >
           <div className="inline-flex items-center gap-2 bg-primary-foreground/15 backdrop-blur-md rounded-full px-4 py-2 mb-6 border border-primary-foreground/20">
             <Star className="h-4 w-4 text-accent fill-accent" />
-            <span className="text-primary-foreground/90 text-sm font-medium">4.9/5 from 50+ stays</span>
+            <span className="text-primary-foreground/90 text-sm font-medium">4.85/5 from 112 reviews</span>
             <span className="text-primary-foreground/50">•</span>
             <MapPin className="h-4 w-4 text-primary-foreground/70" />
             <span className="text-primary-foreground/90 text-sm">Indian Rocks Beach, FL</span>

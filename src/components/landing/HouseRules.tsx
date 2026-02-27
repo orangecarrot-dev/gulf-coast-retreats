@@ -2,13 +2,14 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import AnimatedSection from "./AnimatedSection";
 
 const rules = [
-  { title: "Check-in & Check-out", content: "Check-in is at 4:00 PM, check-out is at 10:00 AM. Early check-in and late check-out may be available upon request." },
+  { title: "Check-in & Check-out", content: "Check-in is after 4:00 PM. Check-out is before 10:00 AM. Self check-in using the keypad — a personalized code will be sent before your arrival." },
   { title: "Maximum Occupancy", content: "The condo accommodates up to 6 guests. All guests must be listed at the time of booking." },
-  { title: "Pet Policy", content: "We love pets! Small to medium-sized dogs are welcome with a $75 pet fee. Please notify us in advance." },
-  { title: "Noise Policy", content: "Quiet hours are from 10:00 PM to 8:00 AM. Please be respectful of neighboring units." },
+  { title: "Minimum Stay", content: "There is a 4-night minimum stay requirement." },
+  { title: "Stairs / Accessibility", content: "The condo is located on the first floor above the parking level. There is one flight of stairs to reach the unit. There is no elevator." },
+  { title: "Noise Policy", content: "Quiet hours are from 10:00 PM to 8:00 AM. Please be respectful of neighboring units in the building." },
   { title: "Smoking Policy", content: "This is a non-smoking property. Smoking is not permitted inside the condo or on the balcony." },
-  { title: "Cancellation Policy", content: "Full refund if cancelled 30+ days before check-in. 50% refund if cancelled 14–30 days before. No refund within 14 days of check-in." },
-  { title: "Parking", content: "One complimentary covered parking space is included. Additional street parking is available." },
+  { title: "Parking", content: "A reserved double parking spot is included at no extra charge." },
+  { title: "Safety", content: "The condo is equipped with smoke alarms, a carbon monoxide alarm, and a fire extinguisher." },
 ];
 
 const HouseRules = () => (

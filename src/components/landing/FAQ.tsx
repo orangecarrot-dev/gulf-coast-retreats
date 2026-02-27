@@ -3,12 +3,14 @@ import AnimatedSection from "./AnimatedSection";
 
 const faqs = [
   { q: "How far is the beach?", a: "Steps away! The beach is directly in front of the building — less than a 1-minute walk from your door to the sand." },
-  { q: "Is parking included?", a: "Yes, one covered parking space is included at no extra charge. Additional street parking is available nearby." },
-  { q: "What's the cancellation policy?", a: "Full refund if cancelled 30+ days before check-in. 50% refund for cancellations 14–30 days out. See House Rules for details." },
-  { q: "How do I check in?", a: "We use a smart lock with a personalized code sent to you before arrival. Self-check-in is easy — no key exchange needed." },
-  { q: "Are pets allowed?", a: "Yes! Small to medium dogs are welcome with a $75 pet fee. Please let us know when booking." },
-  { q: "What's nearby?", a: "Indian Rocks Beach Nature Preserve, Sand Key Park, Clearwater Beach (15 min), Tampa & St. Pete (30-45 min), plus amazing local restaurants and bars within walking distance." },
-  { q: "Why should I book direct instead of Airbnb?", a: "You'll save 15–20% in service fees, get flexible cancellation, direct communication with us, and the best price guaranteed. Same property, better experience, lower price." },
+  { q: "Is parking included?", a: "Yes! A reserved double parking spot is included at no extra charge." },
+  { q: "How do I check in?", a: "Self check-in using a smart keypad. A personalized code will be sent to you before arrival — no key exchange needed. Check-in is after 4:00 PM." },
+  { q: "Are there stairs?", a: "Yes, the condo is on the first floor above the parking level. There is one flight of stairs. There is no elevator." },
+  { q: "Is the pool heated?", a: "Yes! The beachfront pool is heated from November through April and offers beautiful ocean views." },
+  { q: "Is it family-friendly?", a: "Absolutely! We provide a pack 'n play / travel crib and high chair. Beach chairs, beach toys, and beach towels are included. The pool is shaded until about noon, which is great for kids." },
+  { q: "What's nearby?", a: "Local favorites like Guppy's, Aqua Prime, and Slyce Pizza are within walking distance. There's a water park at the nearby Holiday Inn, bike and board rentals, and a sunset painting class on the beach just a 5-minute walk away. Clearwater Beach and John's Pass Boardwalk are a short drive." },
+  { q: "Why should I book direct instead of Airbnb?", a: "You'll save 15-20% in service fees, get flexible cancellation, direct communication with Stuart, and the best price guaranteed. Same property, better experience, lower price." },
+  { q: "What's the minimum stay?", a: "There is a 4-night minimum stay requirement." },
 ];
 
 const FAQ = () => (

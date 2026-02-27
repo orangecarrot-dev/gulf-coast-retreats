@@ -2,11 +2,15 @@ import { MapPin, Clock } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const attractions = [
-  { name: "Indian Rocks Beach", distance: "Steps away", desc: "White sand, gentle waves, stunning sunsets" },
-  { name: "Nature Preserve", distance: "5 min walk", desc: "Boardwalk trails and birdwatching" },
-  { name: "Sand Key Park", distance: "10 min drive", desc: "Playground, dog park, nature trails" },
-  { name: "Florida Botanical Gardens", distance: "12 min drive", desc: "Beautiful gardens and wedding venue" },
-  { name: "Clearwater Beach", distance: "15 min drive", desc: "#1 Beach in America — Pier 60 sunsets" },
+  { name: "Indian Rocks Beach", distance: "Steps away", desc: "White sand, gentle waves, stunning Gulf Coast sunsets" },
+  { name: "Guppy's on the Beach", distance: "Walking", desc: "Local favorite seafood restaurant" },
+  { name: "Aqua Prime", distance: "Walking", desc: "Upscale waterfront dining" },
+  { name: "Slyce Pizza", distance: "Walking", desc: "Great pizza and casual dining" },
+  { name: "Sunset Painting Class", distance: "5 min walk", desc: "Paint on the beach at sunset" },
+  { name: "Holiday Inn Water Park", distance: "Nearby", desc: "Fun for the whole family" },
+  { name: "Bike & Board Rentals", distance: "Nearby", desc: "Explore the coast on two wheels" },
+  { name: "Clearwater Beach", distance: "Short drive", desc: "#1 Beach in America — Pier 60 sunsets" },
+  { name: "John's Pass Boardwalk", distance: "Short drive", desc: "Shopping, dining, dolphin tours" },
   { name: "Tampa & St. Pete", distance: "30–45 min", desc: "Busch Gardens, museums, world-class dining" },
 ];
 
@@ -24,7 +28,7 @@ const LocationAttractions = () => (
           <div className="bg-muted rounded-xl overflow-hidden aspect-[4/3] flex items-center justify-center border border-border">
             <div className="text-center p-8">
               <MapPin className="h-16 w-16 text-primary mx-auto mb-4" />
-              <p className="text-lg font-heading text-foreground">Indian Rocks Beach, FL</p>
+              <p className="text-lg font-heading text-foreground">1904 Gulf Blvd, Indian Rocks Beach, FL</p>
               <p className="text-muted-foreground mt-2">Google Map will be embedded here</p>
             </div>
           </div>

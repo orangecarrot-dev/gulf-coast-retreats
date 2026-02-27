@@ -3,28 +3,39 @@ import AnimatedSection from "./AnimatedSection";
 
 const reviews = [
   {
-    name: "Sarah M.",
-    date: "January 2026",
-    rating: 5,
-    text: "Absolutely stunning condo right on the beach! The sunset views from the balcony were unreal. Everything was spotless and the hosts were incredibly responsive. We'll definitely be back!",
+    name: "Sarah",
+    location: "Lebanon, Kentucky",
+    date: "May 2025",
+    rating: 4,
+    text: "This condo is as described in the pictures. The owners were VERY helpful - we had an AC issue and beach closet issue and they were quick to help! There are many restaurants within walking distance. The pool is great and is shaded until about noon, great for kids! Indian Rocks Beach is a lot less crowded than Clearwater and a great place to bring kids! We will be back.",
   },
   {
-    name: "James & Lisa K.",
+    name: "Jennifer",
+    location: "Airbnb Guest",
+    date: "July 2025",
+    rating: 5,
+    text: "Very beautiful and they were very helpful. Supplied the travel crib for my grandson and had everything you would need for the beach or the pool. Thank you so much for the memories!",
+  },
+  {
+    name: "Polly",
+    location: "Madison Lake, Minnesota",
+    date: "April 2025",
+    rating: 5,
+    text: "Great location on IRB and it's nice to have a pool for the kids on top of the beautiful beach. Even though the balcony doesn't have a great view it's a nice place for a cup of coffee and steps from the beach.",
+  },
+  {
+    name: "Marie",
+    location: "De Pere, Wisconsin",
+    date: "March 2025",
+    rating: 4,
+    text: "Place as described. Parking is ideal. Had all items needed for cooking meals, washing laundry, etc. Beach chairs and towels on hand. Pool and beach were clean and we were always able to find a spot for our group of 4-8 people. Wonderful for a low key beach vacation.",
+  },
+  {
+    name: "Brian",
+    location: "Elm Grove, Wisconsin",
     date: "December 2025",
-    rating: 5,
-    text: "Best vacation rental we've ever stayed in. The kitchen was fully stocked, the beds were incredibly comfortable, and the pool area was gorgeous. Indian Rocks Beach is our new favorite spot.",
-  },
-  {
-    name: "Robert T.",
-    date: "November 2025",
-    rating: 5,
-    text: "Booking direct saved us over $200 compared to what we found on Airbnb. The condo was even better than the photos. Steps from the sand — you literally can't beat this location.",
-  },
-  {
-    name: "Emily & Dan W.",
-    date: "October 2025",
-    rating: 5,
-    text: "We brought our two kids and had the best family vacation. The pool was a huge hit and the beach was never crowded. The owners thought of everything — beach chairs, games, and even a great local restaurant guide!",
+    rating: 4,
+    text: "Decent place close to beach. Clean and convenient. Nice neighborhood. The location is hard to beat for the price.",
   },
 ];
 
@@ -38,8 +49,8 @@ const Reviews = () => (
               <Star key={i} className="h-5 w-5 text-accent fill-accent" />
             ))}
           </div>
-          <span className="font-heading text-lg text-foreground">4.9 / 5</span>
-          <span className="text-muted-foreground text-sm">from 50+ stays</span>
+          <span className="font-heading text-lg text-foreground">4.85 / 5</span>
+          <span className="text-muted-foreground text-sm">from 112 reviews</span>
         </div>
         <h2 className="text-3xl md:text-5xl font-heading text-foreground">What Our Guests Say</h2>
       </AnimatedSection>
@@ -57,7 +68,7 @@ const Reviews = () => (
               <p className="text-foreground/80 leading-relaxed mb-6 italic">"{r.text}"</p>
               <div>
                 <p className="font-medium text-foreground">{r.name}</p>
-                <p className="text-sm text-muted-foreground">{r.date}</p>
+                <p className="text-sm text-muted-foreground">{r.location} · {r.date}</p>
               </div>
             </div>
           </AnimatedSection>

@@ -1,6 +1,8 @@
 import {
   Umbrella, Waves, Sun, Flame, Coffee, UtensilsCrossed, Tv,
-  Wifi, Wind, WashingMachine, Car, Building, Lock, Shirt
+  Wifi, Wind, WashingMachine, Car, Lock, Shirt, Baby,
+  Thermometer, ShieldCheck, Droplets, ChefHat, Armchair,
+  Bath, Home
 } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
@@ -8,37 +10,50 @@ const categories = [
   {
     title: "Beach & Outdoor",
     items: [
-      { icon: Waves, label: "Beach Access" },
-      { icon: Umbrella, label: "Beach Chairs & Umbrella" },
+      { icon: Waves, label: "Beachfront Access" },
+      { icon: Home, label: "Waterfront Location" },
       { icon: Sun, label: "Heated Pool" },
-      { icon: Flame, label: "Outdoor Grill" },
+      { icon: Umbrella, label: "Beach Chairs & Towels" },
+      { icon: Flame, label: "BBQ Grill" },
+      { icon: Armchair, label: "Private Balcony" },
+      { icon: Droplets, label: "Outdoor Shower" },
     ],
   },
   {
-    title: "Kitchen",
+    title: "Kitchen & Dining",
     items: [
-      { icon: UtensilsCrossed, label: "Full Kitchen" },
+      { icon: ChefHat, label: "Full Kitchen" },
+      { icon: UtensilsCrossed, label: "Dishes & Silverware" },
       { icon: Coffee, label: "Coffee Maker" },
+      { icon: UtensilsCrossed, label: "Stove & Oven" },
       { icon: UtensilsCrossed, label: "Dishwasher" },
-      { icon: UtensilsCrossed, label: "Cookware & Utensils" },
+      { icon: UtensilsCrossed, label: "Microwave" },
+      { icon: UtensilsCrossed, label: "Refrigerator & Freezer" },
+      { icon: UtensilsCrossed, label: "Toaster & Kettle" },
     ],
   },
   {
-    title: "Comfort",
+    title: "Comfort & Tech",
     items: [
-      { icon: Wind, label: "Central A/C" },
-      { icon: Wifi, label: "High-Speed Wi-Fi" },
-      { icon: Tv, label: "Smart TV" },
-      { icon: WashingMachine, label: "Washer & Dryer" },
-      { icon: Shirt, label: "Fresh Linens" },
+      { icon: Wind, label: "Central A/C & Heating" },
+      { icon: Wifi, label: "Wi-Fi" },
+      { icon: Tv, label: "TV" },
+      { icon: WashingMachine, label: "Washer & Dryer (In Unit)" },
+      { icon: Shirt, label: "Bed Linens & Towels" },
+      { icon: Bath, label: "Bathtub & Hair Dryer" },
+      { icon: UtensilsCrossed, label: "Iron" },
     ],
   },
   {
-    title: "Building",
+    title: "Family & Safety",
     items: [
-      { icon: Car, label: "Free Parking" },
-      { icon: Building, label: "Elevator" },
-      { icon: Lock, label: "Secure Entry" },
+      { icon: Baby, label: "Pack 'n Play / Travel Crib" },
+      { icon: Baby, label: "High Chair" },
+      { icon: Car, label: "Free Double Parking" },
+      { icon: Lock, label: "Self Check-in (Keypad)" },
+      { icon: Home, label: "Private Entrance" },
+      { icon: ShieldCheck, label: "Smoke & CO Alarms" },
+      { icon: Thermometer, label: "Fire Extinguisher" },
     ],
   },
 ];

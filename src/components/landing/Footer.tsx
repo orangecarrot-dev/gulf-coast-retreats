@@ -33,7 +33,7 @@ const Footer = () => (
         <div>
           <h4 className="font-heading text-lg mb-4">Contact</h4>
           <ul className="space-y-3 text-primary-foreground/60 text-sm">
-            <li className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Indian Rocks Beach, FL 33785</li>
+            <li className="flex items-center gap-2"><MapPin className="h-4 w-4" /> 1904 Gulf Blvd APT B, Indian Rocks Beach, FL 33785</li>
             <li className="flex items-center gap-2"><Mail className="h-4 w-4" /> hello@indianrocksretreat.com</li>
             <li className="flex items-center gap-2"><Phone className="h-4 w-4" /> (727) 555-0123</li>
           </ul>

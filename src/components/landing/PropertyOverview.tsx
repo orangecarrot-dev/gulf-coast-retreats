@@ -1,11 +1,11 @@
-import { Bed, Bath, Users, Maximize, Waves } from "lucide-react";
+import { Bed, Bath, Users, Maximize, Waves, BedDouble } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const specs = [
+  { icon: Users, label: "Guests", value: "6" },
   { icon: Bed, label: "Bedrooms", value: "2" },
+  { icon: BedDouble, label: "Beds", value: "4" },
   { icon: Bath, label: "Bathrooms", value: "2" },
-  { icon: Users, label: "Sleeps", value: "6" },
-  { icon: Maximize, label: "Sq Ft", value: "1,200" },
   { icon: Waves, label: "Beach", value: "Steps Away" },
 ];
 
@@ -32,10 +32,10 @@ const PropertyOverview = () => (
       <AnimatedSection delay={0.2}>
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Welcome to Indian Rocks Retreat — a beautifully updated beachfront condo perched on the shores of Indian Rocks Beach, one of Florida's best-kept secrets. Wake up to stunning Gulf sunsets from your private balcony, stroll to the beach in under a minute, and enjoy the comfort of a fully equipped home with resort-style amenities.
+            Welcome to Indian Rocks Retreat at Sea Isles Condo, steps from the ocean in the quaint beach-side community of Indian Rocks Beach. This adorable 2 bedroom condo sleeps up to 6, features a peek-a-boo view of the Gulf of Mexico from the balcony, a fully equipped kitchen, beach chairs, beach toys, beach towels, and a reserved double parking spot. Enjoy the beachfront heated pool with ocean views.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-            Whether you're planning a romantic getaway, a family vacation, or a quiet escape from the everyday, this is your place to unwind, recharge, and soak in the Florida sunshine. Every detail has been thoughtfully curated for comfort and convenience.
+            Sea Isles offers a quiet experience away from the crowds, but is just a short drive from Clearwater Beach and John's Pass Boardwalk. Walk to local favorites like Guppy's, Aqua Prime, and Slyce Pizza. Rent bikes and boards nearby, or take a sunset painting class on the beach just 5 minutes away. The master bedroom has a king bed, and the second bedroom features a queen bed plus bunk beds, perfect for families.
           </p>
         </div>
       </AnimatedSection>
