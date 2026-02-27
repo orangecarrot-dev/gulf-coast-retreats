@@ -3,6 +3,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedSection from "./AnimatedSection";
 
+// Airbnb original images (already downloaded)
 import galleryLiving from "@/assets/gallery-living.jpg";
 import galleryBedroom from "@/assets/gallery-bedroom.jpg";
 import galleryBedroom2 from "@/assets/gallery-bedroom2.jpg";
@@ -16,18 +17,26 @@ import galleryPool2 from "@/assets/gallery-pool2.jpg";
 import galleryBeach from "@/assets/gallery-beach.jpg";
 import galleryBuilding from "@/assets/gallery-building.jpg";
 import galleryDining from "@/assets/gallery-dining.jpg";
-import zillowBeach from "@/assets/zillow-beach.jpg";
-import zillowSunset from "@/assets/zillow-sunset.jpg";
-import zillowPool from "@/assets/zillow-pool.jpg";
-import zillowBeachChairs from "@/assets/zillow-beach-chairs.jpg";
-import zillowLivingBalcony from "@/assets/zillow-living-balcony.jpg";
-import zillowPatioGrill from "@/assets/zillow-patio-grill.jpg";
-import zillowBuilding from "@/assets/zillow-building.jpg";
-import zillowAerial from "@/assets/zillow-aerial.jpg";
-import zillowLivingOpen from "@/assets/zillow-living-open.jpg";
-import zillowDeck from "@/assets/zillow-deck.jpg";
-import zillowParking from "@/assets/zillow-parking.jpg";
-import zillowBeachSunset from "@/assets/zillow-beach-sunset.jpg";
+import heroImg from "@/assets/hero.jpg";
+
+// Additional Airbnb images
+import airbnb0ff7 from "@/assets/airbnb-0ff7f8bd.jpg";
+import airbnb2668 from "@/assets/airbnb-2668af3a.jpg";
+import airbnb34eb from "@/assets/airbnb-34eb3346.jpg";
+import airbnb44c4 from "@/assets/airbnb-44c4b69c.jpg";
+import airbnb5347 from "@/assets/airbnb-5347bb22.jpg";
+import airbnb5b8e from "@/assets/airbnb-5b8ee43a.jpg";
+import airbnb6c96 from "@/assets/airbnb-6c96b99d.jpg";
+import airbnb752f from "@/assets/airbnb-752fa87f.jpg";
+import airbnb7f84 from "@/assets/airbnb-7f844ff7.jpg";
+import airbnb8bf1 from "@/assets/airbnb-8bf11894.jpg";
+import airbnbBd0a from "@/assets/airbnb-bd0a267c.jpg";
+import airbnbBecb from "@/assets/airbnb-becb3da7.jpg";
+import airbnbCfbe from "@/assets/airbnb-cfbe4746.jpg";
+import airbnbD3fe from "@/assets/airbnb-d3fe558a.jpg";
+import airbnbDe26 from "@/assets/airbnb-de269216.jpg";
+import airbnbF194 from "@/assets/airbnb-f1949364.jpg";
+import airbnbF384 from "@/assets/airbnb-f3841632.jpg";
 
 type Photo = { src: string; alt: string; label: string };
 
@@ -36,23 +45,36 @@ const categories: { name: string; photos: Photo[] }[] = [
     name: "Living Space",
     photos: [
       { src: galleryLiving, alt: "Living room with comfortable seating", label: "Living Room" },
-      { src: zillowLivingOpen, alt: "Open concept living and kitchen area", label: "Open Floor Plan" },
-      { src: zillowLivingBalcony, alt: "Living room with balcony ocean view", label: "Living Room View" },
+      { src: galleryDining, alt: "Dining area", label: "Dining Area" },
+      { src: airbnbBd0a, alt: "Beach towel storage cabinet", label: "Towel Storage" },
+      { src: airbnb752f, alt: "Beach-themed wall decor", label: "Decor" },
     ],
   },
   {
-    name: "Bedrooms",
+    name: "Master Bedroom",
     photos: [
-      { src: galleryBedroom, alt: "Master bedroom with king bed", label: "Master Bedroom" },
-      { src: galleryBedroom3, alt: "Master bedroom alternate view", label: "Master Bedroom" },
-      { src: galleryBedroom2, alt: "Second bedroom with queen and bunk beds", label: "2nd Bedroom" },
+      { src: galleryBedroom, alt: "Master bedroom with king bed", label: "King Bed" },
+      { src: galleryBedroom3, alt: "Master bedroom alternate angle", label: "Master Bedroom" },
+      { src: airbnb6c96, alt: "Master bedroom with ceiling fan", label: "Master Bedroom" },
+      { src: airbnb8bf1, alt: "Master bedroom with dresser", label: "Master Bedroom" },
+      { src: airbnbBecb, alt: "Master bedroom wide view", label: "Master Bedroom" },
+      { src: airbnbCfbe, alt: "Master bedroom from doorway", label: "Master Bedroom" },
     ],
   },
   {
-    name: "Kitchen & Dining",
+    name: "2nd Bedroom",
+    photos: [
+      { src: galleryBedroom2, alt: "2nd bedroom with queen and bunk beds", label: "Queen + Bunks" },
+      { src: airbnb44c4, alt: "2nd bedroom queen and bunk layout", label: "Queen + Bunks" },
+      { src: airbnb5347, alt: "2nd bedroom bunk beds closeup", label: "Bunk Beds" },
+      { src: airbnb7f84, alt: "2nd bedroom from doorway with TV", label: "2nd Bedroom" },
+      { src: airbnbD3fe, alt: "2nd bedroom closet and bunk view", label: "2nd Bedroom" },
+    ],
+  },
+  {
+    name: "Kitchen",
     photos: [
       { src: galleryKitchen, alt: "Fully equipped kitchen", label: "Kitchen" },
-      { src: galleryDining, alt: "Dining area", label: "Dining Area" },
     ],
   },
   {
@@ -60,36 +82,29 @@ const categories: { name: string; photos: Photo[] }[] = [
     photos: [
       { src: galleryBathroom, alt: "Master bathroom", label: "Master Bath" },
       { src: galleryBathroom2, alt: "Second bathroom", label: "2nd Bath" },
+      { src: airbnb34eb, alt: "Full bathroom with tub/shower", label: "Bathroom" },
+      { src: airbnb5b8e, alt: "Bathroom vanity and mirror", label: "Vanity" },
+      { src: airbnbDe26, alt: "Tub/shower with frosted window", label: "Tub/Shower" },
     ],
   },
   {
-    name: "Outdoor & Pool",
+    name: "Balcony & Outdoor",
+    photos: [
+      { src: galleryBalcony, alt: "Balcony patio set with sunset view", label: "Balcony" },
+      { src: airbnb0ff7, alt: "Balcony view with peek-a-boo ocean glimpse", label: "Ocean Peek" },
+      { src: airbnb2668, alt: "Covered balcony with seating", label: "Balcony Seating" },
+      { src: airbnbF194, alt: "Covered porch with chairs and table", label: "Porch" },
+      { src: airbnbF384, alt: "Common area with lawn chairs and ocean view", label: "Common Area" },
+    ],
+  },
+  {
+    name: "Pool & Beach",
     photos: [
       { src: galleryPool, alt: "Beachfront heated pool", label: "Heated Pool" },
       { src: galleryPool2, alt: "Pool area with ocean view", label: "Pool Area" },
-      { src: zillowPool, alt: "Pool and deck area", label: "Pool Deck" },
-      { src: galleryBalcony, alt: "Balcony patio set with sunset view", label: "Balcony" },
-      { src: zillowPatioGrill, alt: "Patio area with BBQ grill", label: "Patio & Grill" },
-      { src: zillowDeck, alt: "Front deck area", label: "Deck" },
-    ],
-  },
-  {
-    name: "Beach & Views",
-    photos: [
-      { src: zillowBeach, alt: "Indian Rocks Beach shoreline", label: "Beach" },
-      { src: zillowBeachChairs, alt: "Beach with chairs and umbrellas", label: "Beach Chairs" },
-      { src: zillowSunset, alt: "Beautiful sunset on the beach", label: "Sunset" },
-      { src: zillowBeachSunset, alt: "Gulf sunset from the shore", label: "Gulf Sunset" },
+      { src: heroImg, alt: "Gorgeous sunset on the beach steps from the condo", label: "Beach Sunset" },
       { src: galleryBeach, alt: "Beach view from the building", label: "Beach View" },
-      { src: zillowAerial, alt: "Aerial view of waterfront location", label: "Aerial View" },
-    ],
-  },
-  {
-    name: "Building & Parking",
-    photos: [
       { src: galleryBuilding, alt: "Building view from the beach", label: "Building" },
-      { src: zillowBuilding, alt: "Condo building exterior", label: "Exterior" },
-      { src: zillowParking, alt: "Reserved double parking spot", label: "Parking" },
     ],
   },
 ];
@@ -122,7 +137,7 @@ const PhotoGallery = () => {
           {["All", ...categories.map((c) => c.name)].map((cat) => (
             <button
               key={cat}
-              onClick={() => setActiveCategory(cat)}
+              onClick={() => { setActiveCategory(cat); setLightbox(null); }}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                 activeCategory === cat
                   ? "bg-primary text-primary-foreground"
