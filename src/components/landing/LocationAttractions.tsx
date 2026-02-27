@@ -1,4 +1,4 @@
-import { MapPin, Clock } from "lucide-react";
+import { Clock } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const attractions = [
@@ -23,14 +23,19 @@ const LocationAttractions = () => (
       </AnimatedSection>
 
       <div className="grid lg:grid-cols-2 gap-10">
-        {/* Map placeholder */}
+        {/* Real Google Map */}
         <AnimatedSection>
-          <div className="bg-muted rounded-xl overflow-hidden aspect-[4/3] flex items-center justify-center border border-border">
-            <div className="text-center p-8">
-              <MapPin className="h-16 w-16 text-primary mx-auto mb-4" />
-              <p className="text-lg font-heading text-foreground">1904 Gulf Blvd, Indian Rocks Beach, FL</p>
-              <p className="text-muted-foreground mt-2">Google Map will be embedded here</p>
-            </div>
+          <div className="rounded-xl overflow-hidden aspect-[4/3] border border-border shadow-coastal">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3525.5!2d-82.8458!3d27.8836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e3d7c0d7a9e7%3A0x0!2s1904+Gulf+Blvd%2C+Indian+Rocks+Beach%2C+FL+33785!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Indian Rocks Retreat location on Google Maps"
+            />
           </div>
         </AnimatedSection>
 
