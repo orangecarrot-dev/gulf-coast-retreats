@@ -55,10 +55,10 @@ const PhotoGallery = () => {
               <button
                 onClick={() => setLightbox(i)}
                 className={`relative overflow-hidden rounded-xl group cursor-pointer block w-full ${
-                  i === 0 ? "md:col-span-2 md:row-span-2" : ""
+                  ""
                 }`}
               >
-                <div className={`aspect-[4/3] ${i === 0 ? "md:aspect-square" : ""}`}>
+                <div className={`aspect-[4/3] ${""}`}>
                   <img
                     src={photo.src}
                     alt={photo.alt}
