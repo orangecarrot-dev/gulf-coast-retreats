@@ -16,10 +16,8 @@ import galleryPool2 from "@/assets/gallery-pool2.jpg";
 import galleryBeach from "@/assets/gallery-beach.jpg";
 import galleryBuilding from "@/assets/gallery-building.jpg";
 import galleryDining from "@/assets/gallery-dining.jpg";
-import heroImg from "@/assets/hero.jpg";
 
 const photos = [
-  { src: heroImg, alt: "Gorgeous daily sunsets on the beach a few steps away from the condo", label: "Beach Sunset" },
   { src: galleryLiving, alt: "Living space with comfortable seating", label: "Living Space" },
   { src: galleryBedroom, alt: "Master bedroom with king bed", label: "Master Bedroom" },
   { src: galleryBedroom2, alt: "Second bedroom with queen bed and twin bunk beds", label: "2nd Bedroom" },
