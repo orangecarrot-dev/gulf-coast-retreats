@@ -5,22 +5,34 @@ import AnimatedSection from "./AnimatedSection";
 
 import galleryLiving from "@/assets/gallery-living.jpg";
 import galleryBedroom from "@/assets/gallery-bedroom.jpg";
+import galleryBedroom2 from "@/assets/gallery-bedroom2.jpg";
+import galleryBedroom3 from "@/assets/gallery-bedroom3.jpg";
 import galleryKitchen from "@/assets/gallery-kitchen.jpg";
 import galleryBathroom from "@/assets/gallery-bathroom.jpg";
+import galleryBathroom2 from "@/assets/gallery-bathroom2.jpg";
 import galleryBalcony from "@/assets/gallery-balcony.jpg";
 import galleryPool from "@/assets/gallery-pool.jpg";
+import galleryPool2 from "@/assets/gallery-pool2.jpg";
 import galleryBeach from "@/assets/gallery-beach.jpg";
+import galleryBuilding from "@/assets/gallery-building.jpg";
+import galleryDining from "@/assets/gallery-dining.jpg";
 import heroImg from "@/assets/hero.jpg";
 
 const photos = [
-  { src: galleryLiving, alt: "Spacious living room with ocean view", label: "Living Space" },
-  { src: galleryBedroom, alt: "Master bedroom with beach view", label: "Bedroom" },
-  { src: galleryKitchen, alt: "Fully equipped modern kitchen", label: "Kitchen" },
-  { src: galleryBathroom, alt: "Luxury bathroom with walk-in shower", label: "Bathroom" },
-  { src: galleryBalcony, alt: "Sunset view from private balcony", label: "Balcony" },
-  { src: galleryPool, alt: "Resort-style pool and palm trees", label: "Pool" },
-  { src: galleryBeach, alt: "Indian Rocks Beach white sand and turquoise water", label: "Beach" },
-  { src: heroImg, alt: "Aerial view of beachfront condo", label: "Exterior" },
+  { src: heroImg, alt: "Gorgeous daily sunsets on the beach a few steps away from the condo", label: "Beach Sunset" },
+  { src: galleryLiving, alt: "Living space with comfortable seating", label: "Living Space" },
+  { src: galleryBedroom, alt: "Master bedroom with king bed", label: "Master Bedroom" },
+  { src: galleryBedroom2, alt: "Second bedroom with queen bed and twin bunk beds", label: "2nd Bedroom" },
+  { src: galleryKitchen, alt: "Fully equipped kitchen", label: "Kitchen" },
+  { src: galleryDining, alt: "Dining area", label: "Dining Area" },
+  { src: galleryBathroom, alt: "Master bathroom", label: "Master Bath" },
+  { src: galleryBathroom2, alt: "Second bathroom", label: "2nd Bath" },
+  { src: galleryBalcony, alt: "Enjoy sunset from the beach or relax at the patio set", label: "Balcony" },
+  { src: galleryPool, alt: "Beachfront heated pool", label: "Pool" },
+  { src: galleryPool2, alt: "Pool area with ocean view", label: "Pool Area" },
+  { src: galleryBeach, alt: "Beach view from the building", label: "Beach View" },
+  { src: galleryBuilding, alt: "Building view from the beach", label: "Building" },
+  { src: galleryBedroom3, alt: "Master bedroom alternate view", label: "Bedroom View" },
 ];
 
 const PhotoGallery = () => {
